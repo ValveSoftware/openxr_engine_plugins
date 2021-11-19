@@ -38,8 +38,8 @@ POSSIBILITY OF SUCH DAMAGE.
 #include "IInputDevice.h"
 #include "IHandTracker.h"
 
-#include "openxr.h"
-#include "openxr_reflection.h"
+#include "tracker_openxr/openxr.h"
+#include "tracker_openxr/openxr_reflection.h"
 
 #include "IOpenXRExtensionPlugin.h"
 #include "OpenXRCore.h"
