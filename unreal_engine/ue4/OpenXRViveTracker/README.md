@@ -7,10 +7,12 @@ Provides XR_HTCX_vive_tracker_interaction extension support
 
  1. For UE4.27.1, you need to apply the following Pull Request to your engine: 
     https://github.com/EpicGames/UnrealEngine/pull/8621
- 2. To use this source build, your project *must* be a C++ project. For more info check out: 
+ 2. For UE5 Early Access, ensure your build already includes the following commit:
+    https://github.com/EpicGames/UnrealEngine/commit/a14fa0214533f4baa438eb7df057e22b3f5fcb86
+ 3. To use this source build, your project *must* be a C++ project. For more info check out: 
     https://docs.unrealengine.com/4.27/en-US/ProgrammingAndScripting/ProgrammingWithCPP/CPPProgrammingQuickStart/
- 3. This plugin requires the engine's built-in OpenXR plugin
- 4. An OpenXR runtime such as SteamVR that implements the XR_HTCX_vive_tracker_interaction extension.
+ 4. This plugin requires the engine's built-in OpenXR plugin
+ 5. An OpenXR runtime such as SteamVR that implements the XR_HTCX_vive_tracker_interaction extension.
 
 
 **II. Building**
