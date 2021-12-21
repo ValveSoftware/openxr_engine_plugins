@@ -118,10 +118,7 @@ void FOpenXRViveTrackerModule::PostCreateSession(XrSession InSession)
 	CreateTrackerBinding(ETrackerRole::Keyboard, CreatePoseAction("tracker_keyboard"));
 
 	m_bActionsGenerated = true;
-}
 
-const void* FOpenXRViveTrackerModule::OnBeginSession(XrSession InSession, const void* InNext)
-{
 	// Bind actions to tracker interaction profile and suggest bindings
 	if (m_arrActionBindings.Num() > 0)
 	{
@@ -139,6 +136,10 @@ const void* FOpenXRViveTrackerModule::OnBeginSession(XrSession InSession, const 
 			UE_LOG(LogOpenXRViveTracker, Error, TEXT("Unable to suggest vive tracker interaction profile bindings to runtime (%i)"), (int32_t)result);
 	}
 
+}
+
+const void* FOpenXRViveTrackerModule::OnBeginSession(XrSession InSession, const void* InNext)
+{
 	return InNext;
 }
 
